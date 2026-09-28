@@ -3,34 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Anuj Nilesh Nagpure</title>
+    <title>Contact | Krushna Harde</title>
+    <meta name="description" content="Contact Krushna Harde — Email, LinkedIn, GitHub, LeetCode, CodeChef, and Codeforces links.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header / Navigation -->
     <header>
-        <h1>Anuj Nilesh Nagpure</h1>
-        <nav>
-            <a href="index.html">home</a> / 
-            <a href="projects.html">projects</a> / 
-            <a href="about.html">about</a> / 
-            <a href="contact.html">contact</a> / 
-            <a href="resume.pdf" download>resume</a>
-        </nav>
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <div class="avatar-circle">KH</div>
+                <div class="brand-info">
+                    <h1>Krushna Harde</h1>
+                    <div class="tagline">Backend & Distributed Systems</div>
+                </div>
+            </a>
+            <nav>
+                <a href="index.html">home</a>
+                <a href="projects.html">projects</a>
+                <a href="about.html">about</a>
+                <a href="contact.html" class="active">contact</a>
+                <a href="resume.pdf" class="btn-resume" download>Resume PDF</a>
+            </nav>
+        </div>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Contact Section -->
         <section>
-            <h2>Contact Me</h2>
-            <p>
-                <a href="https://www.linkedin.com/in/anuj-nagpure-245611294/" target="_blank" rel="noopener">LinkedIn</a>
+            <h2 class="section-title">Get In Touch</h2>
+            <p style="font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 2rem;">
+                Whether you want to discuss backend engineering, Kubernetes control planes, system architectures, competitive programming, or prospective engineering roles, feel free to reach out!
             </p>
-            <p>
-                <a href="mailto:anujnagpure6@gmail.com">anujnagpure6@gmail.com</a>
-            </p>
+
+            <div class="skills-container" style="margin-bottom: 2.5rem;">
+                <div class="skill-box">
+                    <h3>Direct Contact</h3>
+                    <p style="margin-bottom: 0.6rem; color: var(--text-secondary);"><strong>Email:</strong> <a href="mailto:hardekrushna88@gmail.com" style="color: var(--accent-amber); text-decoration: none;">hardekrushna88@gmail.com</a></p>
+                    <p style="margin-bottom: 0.6rem; color: var(--text-secondary);"><strong>Phone:</strong> <a href="tel:+918888986336" style="color: var(--text-primary); text-decoration: none;">+91-8888986336</a></p>
+                    <p style="color: var(--text-secondary);"><strong>Location:</strong> Pune / Nashik, Maharashtra, India</p>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Social Profiles</h3>
+                    <div class="social-buttons" style="margin-top: 0.5rem;">
+                        <a href="https://www.linkedin.com/in/krushna-harde" target="_blank" rel="noopener" class="social-btn">LinkedIn ↗</a>
+                        <a href="https://github.com/KrushnaHarde" target="_blank" rel="noopener" class="social-btn">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Competitive Programming Box Matrix -->
+            <h3 style="margin-bottom: 1rem; color: var(--text-primary);">Competitive Programming Profiles</h3>
+            <div class="cp-matrix">
+                <div class="cp-box">
+                    <div class="cp-head">
+                        <span class="cp-name">LeetCode</span>
+                        <a href="https://leetcode.com/u/krushna_88" target="_blank" rel="noopener" class="cp-score" style="font-size: 0.9rem; text-decoration: none;">krushna_88 ↗</a>
+                    </div>
+                    <div class="cp-detail">
+                        Rating: <strong class="highlight-amber">1964</strong> (Top 2.9%)<br>
+                        1700+ Solved | 160+ Contests
+                    </div>
+                </div>
+
+                <div class="cp-box">
+                    <div class="cp-head">
+                        <span class="cp-name">CodeChef</span>
+                        <a href="https://www.codechef.com/users/hardekrushna" target="_blank" rel="noopener" class="cp-score" style="font-size: 0.9rem; text-decoration: none;">hardekrushna ↗</a>
+                    </div>
+                    <div class="cp-detail">
+                        Rating: <strong class="highlight-emerald">1684</strong> (3-Star)<br>
+                        Active Competitive Programmer
+                    </div>
+                </div>
+
+                <div class="cp-box">
+                    <div class="cp-head">
+                        <span class="cp-name">Codeforces</span>
+                        <a href="https://codeforces.com/profile/thisIsMeKjh" target="_blank" rel="noopener" class="cp-score" style="font-size: 0.9rem; text-decoration: none;">thisIsMeKjh ↗</a>
+                    </div>
+                    <div class="cp-detail">
+                        Rating: <strong>1252</strong><br>
+                        Contest Participant
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>© 2026 Krushna Harde</div>
+        <div><a href="index.html">← Back to Home</a></div>
+    </footer>
 </body>
 </html>

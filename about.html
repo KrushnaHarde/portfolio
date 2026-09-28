@@ -3,37 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Anuj Nilesh Nagpure</title>
+    <title>About | Krushna Harde</title>
+    <meta name="description" content="Learn more about Krushna Harde — Computer Engineering student at PICT Pune, Engineering Intern at Platform9, competitive programmer, and backend engineer working with Java, Go, Spring Boot, and Kubernetes.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header / Navigation -->
     <header>
-        <h1>Anuj Nilesh Nagpure</h1>
-        <nav>
-            <a href="index.html">home</a> / 
-            <a href="projects.html">projects</a> / 
-            <a href="about.html">about</a> / 
-            <a href="contact.html">contact</a> / 
-            <a href="resume.pdf" download>resume</a>
-        </nav>
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <div class="avatar-circle">KH</div>
+                <div class="brand-info">
+                    <h1>Krushna Harde</h1>
+                    <div class="tagline">Backend & Distributed Systems</div>
+                </div>
+            </a>
+            <nav>
+                <a href="index.html">home</a>
+                <a href="projects.html">projects</a>
+                <a href="about.html" class="active">about</a>
+                <a href="contact.html">contact</a>
+                <a href="resume.pdf" class="btn-resume" download>Resume PDF</a>
+            </nav>
+        </div>
     </header>
 
     <!-- Main Content -->
     <main>
         <!-- About Section -->
         <section>
-            <h2>About</h2>
-            <p>
-                I'm a Computer Science student at SCTR's Pune Institute of Computer Technology, currently maintaining a CGPA of 9.80. 
-                I love problem solving and have been doing competitive programming for the past year, which has helped me develop strong 
-                algorithmic thinking and problem-solving skills.
-            </p>
-            <p>
-                I'm interested in MERN stack development and have experience building full-stack applications using Node.js, Express.js, and MongoDB. 
-                My development skills include working with modern web technologies, building RESTful APIs, and creating scalable backend systems.
-            </p>
+            <h2 class="section-title">About Me</h2>
+            <div class="card-item" style="margin-bottom: 2rem;">
+                <p style="font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.8;">
+                    I am a Computer Engineering student at <strong>SCTR's Pune Institute of Computer Technology (PICT), Pune</strong>, maintaining a <strong>CGPA of 9.27 / 10</strong>. I build high-concurrency microservices, event-driven architectures, and distributed systems.
+                </p>
+                <p style="font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.8;">
+                    Currently, I am an <strong>Engineering Intern at Platform9 Systems</strong> working on Private Cloud Director -- Kubernetes (PCD-K), where I dive into control-plane interactions and managed Kubernetes cluster lifecycle orchestration.
+                </p>
+                <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.8;">
+                    My tech stack includes <strong>Java, Go, C++, Spring Boot, Redis, Kafka, PostgreSQL, MongoDB, and Kubernetes</strong>. Beyond development, I have solved <strong>1700+ Data Structures & Algorithms problems</strong> across 160+ contests, holding a LeetCode rating of <strong>1964 (Top 2.9% globally)</strong> and a 3-Star rating on CodeChef (1684).
+                </p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section>
+            <h2 class="section-title">Education</h2>
+            
+            <div class="card-item">
+                <div class="card-header">
+                    <div class="card-title">Pune Institute of Computer Technology (PICT), Pune</div>
+                    <span class="card-date">Sept. 2023 -- Present</span>
+                </div>
+                <div class="card-subtitle">B.E. in Computer Engineering</div>
+                <div style="font-size: 0.95rem; color: var(--text-primary); font-family: var(--font-mono); margin-bottom: 0.5rem;">CGPA: 9.27 / 10.0</div>
+                <p style="font-size: 0.95rem; color: var(--text-secondary);">Coursework includes Data Structures & Algorithms, Operating Systems, Computer Networks, Database Management Systems, and Distributed Systems.</p>
+            </div>
+
+            <div class="card-item">
+                <div class="card-header">
+                    <div class="card-title">KTHM College, Nashik</div>
+                    <span class="card-date">March 2023</span>
+                </div>
+                <div class="card-subtitle">Higher Secondary Certificate (HSC)</div>
+                <div style="font-size: 0.95rem; color: var(--text-primary); font-family: var(--font-mono);">Percentage: 75.50%</div>
+            </div>
+
+            <div class="card-item">
+                <div class="card-header">
+                    <div class="card-title">New English School, Nashik</div>
+                    <span class="card-date">March 2021</span>
+                </div>
+                <div class="card-subtitle">Secondary School Certificate (SSC)</div>
+                <div style="font-size: 0.95rem; color: var(--text-primary); font-family: var(--font-mono);">Percentage: 92.20%</div>
+            </div>
+        </section>
+
+        <!-- Leadership & Extracurriculars -->
+        <section>
+            <h2 class="section-title">Leadership & Community</h2>
+            
+            <div class="card-item">
+                <div class="card-header">
+                    <div class="card-title">Technical Head</div>
+                    <span class="card-date">Mar. 2025 -- Apr. 2026</span>
+                </div>
+                <div class="card-subtitle">PICT Finance Society</div>
+                <ul class="bullet-list">
+                    <li>Led development of the society website, optimized deployment workflows, and mentored junior developers in web technologies.</li>
+                    <li>Organized technical workshops and streamlined digital assets for financial literacy initiatives.</li>
+                </ul>
+            </div>
+
+            <div class="card-item">
+                <div class="card-header">
+                    <div class="card-title">Event Coordinator</div>
+                    <span class="card-date">PICT ACM Student Chapter (PASC)</span>
+                </div>
+                <div class="card-subtitle">PICT ACM Student Chapter</div>
+                <ul class="bullet-list">
+                    <li>Organized technical workshops, national hackathons, and PULZION's flagship <strong>CODEX</strong> competitive programming contest.</li>
+                    <li>Managed problem setting, platform setup, and participant support for 500+ participants.</li>
+                </ul>
+            </div>
+
+            <div class="card-item">
+                <div class="card-header">
+                    <div class="card-title">District-Level Chess Player</div>
+                    <span class="card-date">Under-17 Category</span>
+                </div>
+                <div class="card-subtitle">Competitive Chess</div>
+                <p style="font-size: 0.95rem; color: var(--text-secondary);">Represented Nashik district at Under-17 tournaments, cultivating tactical discipline and decision-making under tight time constraints.</p>
+            </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>© 2026 Krushna Harde</div>
+        <div><a href="index.html">← Back to Home</a></div>
+    </footer>
 </body>
 </html>

@@ -3,54 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Anuj Nilesh Nagpure</title>
+    <title>Projects | Krushna Harde</title>
+    <meta name="description" content="Projects engineered by Krushna Harde — FlashFlow (High-Concurrency Flash Sale Engine) and ChatNexus (Real-Time WebSocket Chat Platform).">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header / Navigation -->
     <header>
-        <h1>Anuj Nilesh Nagpure</h1>
-        <nav>
-            <a href="index.html">home</a> / 
-            <a href="projects.html">projects</a> / 
-            <a href="about.html">about</a> / 
-            <a href="contact.html">contact</a> / 
-            <a href="resume.pdf" download>resume</a>
-        </nav>
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <div class="avatar-circle">KH</div>
+                <div class="brand-info">
+                    <h1>Krushna Harde</h1>
+                    <div class="tagline">Backend & Distributed Systems</div>
+                </div>
+            </a>
+            <nav>
+                <a href="index.html">home</a>
+                <a href="projects.html" class="active">projects</a>
+                <a href="about.html">about</a>
+                <a href="contact.html">contact</a>
+                <a href="resume.pdf" class="btn-resume" download>Resume PDF</a>
+            </nav>
+        </div>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Projects Section -->
         <section>
-            <h2>Projects</h2>
-            <div class="project-list">
-                <div class="project-item">
-                    <div class="project-date">2026</div>
-                    <div class="project-content">
-                        <a href="https://cp-helper-five.vercel.app/" class="project-name" target="_blank" rel="noopener">CP Helper (Full Stack)</a>
-                        <p class="project-description">Full-stack MERN application for competitive programmers with real-time code execution, profile aggregation, and automated bug detection.</p>
-                        <p class="project-description">Built using Dockerized C++ microservice for code execution and differential testing engine for automated bug detection.</p>
+            <h2 class="section-title">Projects & Systems</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                Detailed look into the core engineering projects I've built, highlighting high-concurrency throughput, event-driven architectures, and distributed system reliability.
+            </p>
+
+            <!-- FlashFlow -->
+            <div class="card-item">
+                <div class="card-header">
+                    <div class="card-title" style="font-size: 1.3rem;">FlashFlow — High-Concurrency Flash Sale Engine</div>
+                    <div class="social-buttons" style="margin-top:0;">
+                        <a href="https://github.com/KrushnaHarde/flashflow" target="_blank" rel="noopener" class="social-btn" style="padding:0.3rem 0.75rem;">GitHub Repository ↗</a>
                     </div>
                 </div>
-                <div class="project-item">
-                    <div class="project-date">2025</div>
-                    <div class="project-content">
-                        <a href="https://github.com/anujop07/pict-lost-found" class="project-name" target="_blank" rel="noopener">PICT Lost and Found (Backend)</a>
-                        <p class="project-description">Admin-controlled MERN backend for campus lost and found management with automatic subscription model using Nodemailer.</p>
-                        <p class="project-description">Implemented JWT authentication, role-based access control, and image uploads for secure item management.</p>
+
+                <div class="tag-group" style="margin-top: 0; margin-bottom: 1rem;">
+                    <span class="tag amber">10,000+ Concurrent Requests</span>
+                    <span class="tag emerald">5,000 RPS</span>
+                    <span class="tag amber">p95: 384 ms</span>
+                    <span class="tag emerald">0% Error Rate</span>
+                </div>
+
+                <p style="color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.7;">
+                    Engineered a high-concurrency flash-sale backend designed to handle extreme purchase request spikes while guaranteeing zero overselling and ultra-low latency execution under heavy stress testing.
+                </p>
+
+                <h4 style="color: var(--accent-amber); font-size: 0.9rem; margin-bottom: 0.5rem; font-family: var(--font-mono); text-transform: uppercase;">Technical Highlights:</h4>
+                <ul class="bullet-list">
+                    <li><strong>Redis Lua Atomic Reservations:</strong> Implemented atomic inventory checking & reservation in Redis Lua scripts to eliminate race conditions under concurrent purchase attempts, enforced by two-layer idempotency (Redis <code>SETNX</code> + DB constraints).</li>
+                    <li><strong>Asynchronous Kafka Order Pipeline:</strong> Built a decoupled <strong>Kafka</strong> order processing pipeline featuring sliding-window rate limiting and automatic TTL-based stock rollback for unfulfilled orders.</li>
+                    <li><strong>Load Testing & Benchmarking:</strong> Sustained <strong>5,000 RPS</strong> with a <strong>p95 response time of 384 ms</strong> and a <strong>0% error rate</strong> during <strong>k6</strong> load testing under 10,000+ concurrent requests.</li>
+                </ul>
+
+                <div class="tag-group">
+                    <span class="tag amber">Java</span>
+                    <span class="tag amber">Spring Boot</span>
+                    <span class="tag violet">Go</span>
+                    <span class="tag">Redis Lua</span>
+                    <span class="tag">Apache Kafka</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">k6 Testing</span>
+                    <span class="tag">Docker</span>
+                </div>
+            </div>
+
+            <!-- ChatNexus -->
+            <div class="card-item">
+                <div class="card-header">
+                    <div class="card-title" style="font-size: 1.3rem;">ChatNexus — Real-Time Chat Platform</div>
+                    <div class="social-buttons" style="margin-top:0;">
+                        <a href="https://chat-nexus-frontend-two.vercel.app/" target="_blank" rel="noopener" class="social-btn" style="padding:0.3rem 0.75rem;">Live Demo ↗</a>
+                        <a href="https://github.com/KrushnaHarde/ChatNexus" target="_blank" rel="noopener" class="social-btn" style="padding:0.3rem 0.75rem;">GitHub Repository ↗</a>
                     </div>
                 </div>
-                <div class="project-item">
-                    <div class="project-date">2025</div>
-                    <div class="project-content">
-                        <a href="https://github.com/anujop07/Adobe1b" class="project-name" target="_blank" rel="noopener">Multi-Collection PDF Analysis</a>
-                        <p class="project-description">Advanced PDF analysis solution that processes multiple document collections and extracts relevant content based on specific personas and use cases.</p>
-                        <p class="project-description">Features persona-based content analysis, importance ranking of extracted sections, and structured JSON output with metadata. Built with Python and Docker.</p>
-                    </div>
+
+                <div class="tag-group" style="margin-top: 0; margin-bottom: 1rem;">
+                    <span class="tag emerald">Live Deployment</span>
+                    <span class="tag amber">STOMP over WebSocket</span>
+                    <span class="tag violet">JWT Security</span>
+                    <span class="tag">SonarQube Code Analysis</span>
+                </div>
+
+                <p style="color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.7;">
+                    A real-time communication platform supporting instant messaging, media sharing, delivery receipts, and user presence state management.
+                </p>
+
+                <h4 style="color: var(--accent-amber); font-size: 0.9rem; margin-bottom: 0.5rem; font-family: var(--font-mono); text-transform: uppercase;">Technical Highlights:</h4>
+                <ul class="bullet-list">
+                    <li><strong>STOMP / WebSocket Core:</strong> Implemented real-time bidirectional message framing using <strong>Spring Boot WebSocket & STOMP handlers</strong>, secured with custom JWT handshake interceptors.</li>
+                    <li><strong>Cloudinary Media Offloading:</strong> Integrated <strong>Cloudinary</strong> for binary attachment hosting while storing indexed document references in <strong>MongoDB</strong> to optimize server storage.</li>
+                    <li><strong>Production Test Suite:</strong> Designed with global exception handling, <strong>Swagger/OpenAPI</strong> documentation, <strong>JUnit & Mockito</strong> tests, and static code quality verification via <strong>SonarQube</strong>.</li>
+                </ul>
+
+                <div class="tag-group">
+                    <span class="tag amber">Spring Boot</span>
+                    <span class="tag">WebSocket/STOMP</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Cloudinary</span>
+                    <span class="tag">JWT</span>
+                    <span class="tag">Swagger/OpenAPI</span>
+                    <span class="tag">JUnit</span>
+                    <span class="tag">Mockito</span>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>© 2026 Krushna Harde</div>
+        <div><a href="index.html">← Back to Home</a></div>
+    </footer>
 </body>
 </html>

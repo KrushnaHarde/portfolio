@@ -1,0 +1,249 @@
+%-------------------------
+% Resume in Latex
+% Author: Jake Gutierrez (Modified for Krushna Harde)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%----------Margins----------
+\addtolength{\oddsidemargin}{-0.60in}
+\addtolength{\evensidemargin}{-0.60in}
+\addtolength{\textwidth}{1.20in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.46in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------Section Formatting-----------
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+\pdfgentounicode=1
+
+%-----------Custom Commands-----------
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-3pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2}\\
+      \textit{\small #3} & \textit{\small #4}
+    \end{tabular*}
+    \vspace{-9pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}
+    \vspace{-17pt}
+}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=0.15in,label={}]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+\end{itemize}
+}
+
+\newcommand{\resumeItemListStart}{
+\begin{itemize}[leftmargin=0.18in,itemsep=1pt,topsep=1pt]
+}
+
+\newcommand{\resumeItemListEnd}{
+\end{itemize}\vspace{-1pt}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%-----------HEADING-----------
+
+\begin{center}
+    {\Huge \scshape Krushna Harde} \\ \vspace{3pt}
+
+    \small
+    +91-8888986336 $|$
+    \href{mailto:hardekrushna88@gmail.com}{\underline{hardekrushna88@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/krushna-harde}{\underline{LinkedIn}} $|$
+    \href{https://github.com/KrushnaHarde}{\underline{GitHub}} $|$
+    \href{https://leetcode.com/u/krushna_88}{\underline{LeetCode}} $|$
+    \href{https://www.codechef.com/users/hardekrushna}{\underline{CodeChef}} $|$
+    \href{https://codeforces.com/profile/thisIsMeKjh}{\underline{Codeforces}}
+
+\end{center}
+
+%-----------EDUCATION-----------
+
+\section{Education}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Pune Institute of Computer Technology, Pune}
+{Sept. 2023 -- Present}
+{B.E. in Computer Engineering \textbf{| CGPA: 9.27/10}}
+{}
+
+% HSC and SSC share one item so the spacing between them is fully controlled
+\vspace{-2pt}\item
+  \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{KTHM College, Nashik} \textit{\small -- HSC} \textbf{\small \textbar{} 75.50\%} & \textbf{\small March 2023}\\[2pt]
+    \textbf{New English School, Nashik} \textit{\small -- SSC} \textbf{\small \textbar{} 92.20\%} & \textbf{\small March 2021}
+  \end{tabular*}
+  \vspace{-6pt}
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+
+\section{Technical Skills}
+
+\begin{itemize}[leftmargin=0.15in,label={}]
+\small{\item{
+
+\textbf{Languages:} Java, Go, C++, JavaScript \\
+
+\textbf{Backend:} Spring Boot, Spring Security, REST APIs, WebSocket/STOMP, Node.js, Express.js \\
+
+\textbf{Databases:} PostgreSQL, MongoDB, MySQL, Redis \\
+
+\textbf{Tools:} Kubernetes, Docker, Git, GitHub, Kafka, Maven, Firebase, Cloudinary, Swagger/OpenAPI
+
+}}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+
+\section{Experience}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Engineering Intern | Platform9}
+{Aug. 2026 -- Present}
+{Private Cloud Director -- Kubernetes (PCD-K)}
+{}
+
+\resumeItemListStart
+
+\resumeItem{Learning the architecture of Platform9's managed Kubernetes platform (\textbf{KAAPI}, \textbf{CCP}, \textbf{HCP}, \textbf{Barista}) and control-plane interactions involved in cluster provisioning and lifecycle management.}
+
+\resumeItemListEnd
+
+\resumeSubheading
+{Backend Developer Intern | Tenancy Passport}
+{Jan. 2026 -- Aug. 2026}
+{Spring Boot, MongoDB, Microservices}
+{}
+
+\resumeItemListStart
+
+\resumeItem{Optimized \textbf{Typesense} search latency by \textbf{83\%} using \textbf{RBAC} pre-filtering, eliminating application-layer filtering.}
+
+\resumeItem{Built a tenancy renewal system using \textbf{Spring Boot}, \textbf{MongoDB} compound indexes, and \textbf{Spring Scheduler} for automated lease rollovers and transactional integrity.}
+
+\resumeItem{Built an \textbf{event-driven} invoice notification pipeline with asynchronous processing, retry scheduling, and distributed locking for reliable email delivery; optimized microservice communication using \textbf{bulk APIs} to eliminate timeout issues.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+
+\section{Projects}
+
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\href{https://github.com/KrushnaHarde/flashflow}{\textbf{FlashFlow -- High-Concurrency Flash Sale Engine}} $|$ \emph{Spring Boot, Redis, Kafka, PostgreSQL}}
+{\href{https://github.com/KrushnaHarde/flashflow}{GitHub}}
+
+\resumeItemListStart
+
+\resumeItem{Engineered a high-concurrency flash-sale engine handling \textbf{10,000+ concurrent requests} using \textbf{Redis Lua} and \textbf{Kafka}; sustained \textbf{5,000 RPS}, \textbf{p95 latency of 384 ms}, and \textbf{0\% error rate} under \textbf{k6} stress testing.}
+
+\resumeItem{Implemented \textbf{Redis Lua} atomic inventory reservation with \textbf{two-layer idempotency} (Redis NX + DB constraint), preventing overselling under concurrent purchase workloads.}
+
+\resumeItem{Built an asynchronous \textbf{Kafka}-based order processing pipeline with sliding-window rate limiting and TTL-based stock rollback, improving scalability, reliability, and fault tolerance.}
+
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\href{https://chat-nexus-frontend-two.vercel.app/}{\textbf{ChatNexus -- Real-Time Chat Platform}} $|$ \emph{Spring Boot, WebSocket, MongoDB, Cloudinary}}
+{\href{https://github.com/KrushnaHarde/ChatNexus}{GitHub}}
+
+\resumeItemListStart
+
+\resumeItem{Built a real-time messaging platform using \textbf{Spring Boot} and \textbf{STOMP/WebSocket} for bidirectional communication with \textbf{JWT}-based user authentication.}
+
+\resumeItem{Implemented message delivery, read receipts, user presence, and media sharing using \textbf{MongoDB} and \textbf{Cloudinary}, reducing server storage overhead.}
+
+\resumeItem{Designed a layered backend architecture with global exception handling, \textbf{Swagger/OpenAPI}, \textbf{JUnit}, \textbf{Mockito}, and \textbf{SonarQube}, improving maintainability and testability.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+
+\section{Achievements}
+
+\resumeItemListStart
+
+\resumeItem{Solved \textbf{1700+} DSA problems, \textbf{160+} contests \textbar{} LeetCode: \textbf{1964} (Top \textbf{2.9\%}) \textbar{} CodeChef: \textbf{3-Star} (1684) \textbar{} Codeforces: \textbf{1252}}
+
+\resumeItem{\textbf{Rank 8} in Google Developers Hack-A-Bit among \textbf{500+} competing teams.}
+
+\resumeItemListEnd
+
+%-----------LEADERSHIP-----------
+
+\section{Leadership \& Extracurricular}
+
+\resumeItemListStart
+
+\resumeItem{\textbf{Technical Head, PICT Finance Society} \hfill \emph{Mar. 2025 -- Apr. 2026}\\
+Led development of the society website, optimized deployment workflows, and mentored junior developers.}
+
+\resumeItem{\textbf{Event Coordinator, PASC} -- Organized workshops, hackathons, and PULZION's CODEX contest.}
+
+\resumeItem{\textbf{Chess} -- District-level Under-17 player.}
+
+\resumeItemListEnd
+
+\end{document}
